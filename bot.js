@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 // Замените TELEGRAM_BOT_TOKEN на свой токен
-const bot = new TelegramBot('6767148413:AAE9RQkNkn2a-gGH1aTH5Zng-26EVCpl-3c', {polling: true});
+const bot = new TelegramBot('TELEGRAM_BOT_TOKEN', {polling: true});
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
